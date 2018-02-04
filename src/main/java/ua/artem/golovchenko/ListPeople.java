@@ -20,7 +20,7 @@ class ListPeople {
 
         try {
             System.out.println("To JSON \n");
-            com.google.protobuf.util.JsonFormat.printer().print(person);
+            System.out.println(com.google.protobuf.util.JsonFormat.printer().print(person));
         } catch (InvalidProtocolBufferException e) {
             e.printStackTrace();
         }
